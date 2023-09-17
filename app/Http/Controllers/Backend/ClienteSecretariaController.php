@@ -26,7 +26,7 @@ class ClienteSecretariaController extends Controller
     }
 
     // Realiza la paginación de la consulta
-    $usuarios = $query->paginate(1); // 10 es el número de usuarios por página
+    $usuarios = $query->paginate(10); // 10 es el número de usuarios por página
 
     // Agrega los parámetros de filtro a los enlaces de paginación
     $usuarios->appends(['tipo' => $filtroTipo]);
